@@ -39,6 +39,9 @@
   <remote  name="slim"
            fetch="https://github.com/slimroms"
            review="gerrit.slimroms.net" />
+	   
+  <remote  name="spz"
+           fetch="git://github.com/spezi77/" />
 
   <default revision="refs/heads/cm-11.0"
            remote="github"
@@ -150,7 +153,6 @@
 
   <!-- CM -->
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" remote="cm" />
-  <project path="art" name="android_art" remote="cm" />
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" />
   <project path="dalvik" name="android_dalvik" remote="cm" />
@@ -228,7 +230,6 @@
   <project path="external/htop" name="android_external_htop" remote="cm" />
   <project path="external/hyphenation" name="android_external_hyphenation" remote="cm" />
   <project path="external/icu4c" name="android_external_icu4c" groups="pdk" remote="cm" />
-  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="cm" />
   <project path="external/ipsec-tools" name="android_external_ipsec-tools" remote="cm" />
   <project path="external/iptables" name="android_external_iptables" remote="cm" />
   <project path="external/jack" name="android_external_jack" remote="cm" />
@@ -372,7 +373,6 @@
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" groups="broadcom_wlan" remote="cm" />
   <project path="hardware/cm" name="android_hardware_cm" remote="cm" />
   <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense" remote="cm" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cm" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="cm" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" remote="cm" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" groups="caf" remote="cm" />
@@ -380,7 +380,6 @@
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="cm" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom" remote="cm" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" groups="caf" remote="cm" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom" remote="cm" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="cm" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="cm" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" groups="caf" remote="cm" />
@@ -397,7 +396,6 @@
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="cm" />
   <project path="libcore" name="android_libcore" remote="cm" />
   <project path="libnativehelper" name="android_libnativehelper" groups="pdk-java" remote="cm" />
-  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="cm" />
   <project path="packages/apps/BasicSmsReceiver" name="android_packages_apps_BasicSmsReceiver" remote="cm" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cm" />
   <project path="packages/apps/BluetoothExt" name="android_packages_apps_BluetoothExt" remote="cm" />
@@ -417,12 +415,9 @@
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cm" />
   <project path="packages/apps/SpeechRecorder" name="android_packages_apps_SpeechRecorder" remote="cm" />
   <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="cm" />
-  <project path="packages/apps/VideoEditor" name="android_packages_apps_VideoEditor" remote="cm" />
   <project path="packages/apps/VoiceDialer" name="android_packages_apps_VoiceDialer" remote="cm" />
   <project path="packages/apps/VoicePlus" name="android_packages_apps_VoicePlus" remote="cm" />
   <project path="packages/experimental" name="android_packages_experimental" remote="cm" />
-  <project path="packages/inputmethods/OpenWnn" name="android_packages_inputmethods_OpenWnn" remote="cm" />
-  <project path="packages/inputmethods/PinyinIME" name="android_packages_inputmethods_PinyinIME" remote="cm" />
   <project path="packages/providers/ApplicationsProvider" name="android_packages_providers_ApplicationsProvider" remote="cm" />
   <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="cm" />
   <project path="packages/providers/PartnerBookmarksProvider" name="android_packages_providers_PartnerBookmarksProvider" remote="cm" />
@@ -446,7 +441,6 @@
   <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="cm" />
   <project path="system/security" name="android_system_security" groups="pdk" remote="cm" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cm" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="cm" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="cm" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" />
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" />
@@ -456,9 +450,6 @@
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omnirom" revision="android-4.4" />
   <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" remote="omnirom" revision="android-4.4" />
 
-  <!-- PA -->
-  <project path="vendor/pa" name="android_vendor_pa" remote="pa" revision="kitkat" />
-
   <!-- SlimRoms' Recents Card lib -->
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="slim" revision="kk4.4"/>
 
@@ -467,22 +458,16 @@
   <project path="build" name="android_build" groups="pdk" remote="pac" revision="pac-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="pac" revision="pac-4.4" />
   <project path="frameworks/base" name="android_frameworks_base" remote="pac" revision="pac-4.4" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pac" revision="pac-4.4" />
   <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" remote="pac" revision="pac-4.4" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="pac" revision="pac-4.4" />
   <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="pac" revision="pac-4.4" />
-  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="pac" revision="pac-4.4" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="pac" revision="pac-4.4"/>
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="pac" revision="pac-4.4" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/GooglePacman" name="android_packages_apps_GooglePacman" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="pac" revision="pac-4.4" />
@@ -494,9 +479,7 @@
   <project path="packages/apps/PACPerformance" name="android_packages_apps_PACPerformance" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pac" revision="pac-4.4" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="pac" revision="pac-4.4" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="pac" revision="pac-4.4" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pac" revision="pac-4.4" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="pac" revision="pac-4.4" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="pac" revision="pac-4.4" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="pac" revision="pac-4.4" />
@@ -505,12 +488,45 @@
   <project path="pacman" name="pacman" remote="pac" revision="pac-4.4" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="pac" revision="pac-4.4" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="pac" revision="pac-4.4" />
-  <project path="vendor/pac" name="android_vendor_pac" remote="pac" revision="pac-4.4" >
-    <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
-  </project>
 
   <!-- Device extras: legacy support -->
-  <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" revision="cm-10.2" />
+  <!--Replaced hardware/qcom/display-legacy from cm-10.2 due to problems (now using Evervolv project see below) -->
   <project path="hardware/qcom/media-legacy" name="androidarmv6/android_hardware_qcom_media_legacy" revision="cm-10.2" />
+
+  <!-- PAC vendor -->
+  <project path="vendor/pac" name="android_vendor_pac" remote="spz" revision="refs/heads/pac-4.4" >
+      <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
+  </project>
+
+  <!-- PA vendor -->
+  <project path="vendor/pa" name="android_vendor_pa" remote="spz" revision="refs/heads/pac-4.4" />
+  
+  <!-- CM vendor -->
+  <project path="vendor/cm" name="android_vendor_cm" remote="spz" revision="refs/heads/pac-4.4" />
+
+  <!-- Device specific projects /-->
+  
+  <!-- Use devicetrees and kernel forked from Evervolv projects -->
+  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/pac-4.4" />
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/cm-11.0" />
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/cm-11.0" />
+  <!-- Use Evervolv vendor blobs -->
+  <project path="vendor/htc" name="Evervolv/android_vendor_htc" remote="github" revision="refs/heads/kitkat" />    
+  <!--  Use legacy projects maintained by Evervolv -->
+  <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" remote="github" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" remote="github" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" remote="github" revision="refs/heads/kitkat" />  
+  <!-- Use forked cm projects with required changes for htc bravo -->
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />
+  <project path="external/iproute2" name="android_external_iproute2" remote="spz" revision="refs/heads/cm-11.0" />
+  <project path="frameworks/opt/telephony" name="pacman_frameworks_opt_telephony" remote="spz" revision="refs/heads/pac-4.4" />
+  <project path="frameworks/native" name="pacman_frameworks_native" remote="spz" revision="refs/heads/pac-4.4" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="cm" revision="refs/heads/cm-11.0" />
+  <!-- Use Torch mod (won't shutdown when screen turns off) -->
+  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/cm-11.0" />
+  <!-- Use camera with compatibility for htc bravo  -->
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="github" revision="refs/heads/kitkat" />
+  <!-- Switch to more recent toolchain / GCC v4.7.4 -->  
+  <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.7.4" name="Mustaavalkosta/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="github" revision="master" />
 
 </manifest>
