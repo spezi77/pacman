@@ -39,6 +39,9 @@
   <remote  name="slim"
            fetch="https://github.com/slimroms"
            review="gerrit.slimroms.net" />
+	   
+  <remote  name="spz"
+           fetch="git://github.com/spezi77/" />
 
   <remote  name="spz"
            fetch="git://github.com/spezi77/" />
@@ -456,7 +459,7 @@
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="slim" revision="kk4.4"/>
 
   <!-- PAC -->
-  <project path="bionic" name="android_bionic" groups="pdk" remote="pac" revision="pac-4.4" />
+  <!--<project path="bionic" name="android_bionic" groups="pdk" remote="pac" revision="pac-4.4" />-->
   <project path="build" name="android_build" groups="pdk" remote="pac" revision="pac-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -493,7 +496,7 @@
   <project path="system/media" name="android_system_media" groups="pdk" remote="pac" revision="pac-4.4" />
 
   <!-- Device extras: legacy support -->
-<!--Replaced hardware/qcom/display-legacy from cm-10.2 due to problems (now using Evervolv project see below) -->
+  <!--Replaced hardware/qcom/display-legacy from cm-10.2 due to problems (now using Evervolv project see below) -->
   <project path="hardware/qcom/media-legacy" name="androidarmv6/android_hardware_qcom_media_legacy" revision="cm-10.2" />
 
   <!-- PAC vendor -->
