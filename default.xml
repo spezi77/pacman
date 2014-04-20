@@ -459,7 +459,7 @@
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="slim" revision="kk4.4"/>
 
   <!-- PAC -->
-  <!--<project path="bionic" name="android_bionic" groups="pdk" remote="pac" revision="pac-4.4" />-->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="pac" revision="pac-4.4" />
   <project path="build" name="android_build" groups="pdk" remote="pac" revision="pac-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
